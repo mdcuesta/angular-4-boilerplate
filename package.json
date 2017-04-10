@@ -8,6 +8,7 @@
     "build": "ng build -prod",
     "test": "ng test",
     "lint": "ng lint",
+    "sass-lint": "sass-lint --verbose --output-file sass-lint-output.html sass",
     "e2e": "ng e2e"
   },
   "private": true,
@@ -24,6 +25,7 @@
     "core-js": "^2.4.1",
     "jquery-slim": "^3.0.0",
     "rxjs": "^5.1.0",
+    "sass-lint": "^1.10.2",
     "tether": "^1.4.0",
     "zone.js": "^0.8.4"
   },
