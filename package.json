@@ -24,6 +24,7 @@
     "bootstrap": "4.0.0-alpha.6",
     "core-js": "^2.4.1",
     "jquery-slim": "^3.0.0",
+    "redux": "^3.6.0",
     "rxjs": "^5.1.0",
     "sass-lint": "^1.10.2",
     "tether": "^1.4.0",
