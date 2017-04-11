@@ -10,6 +10,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
 
+import TodoStore from '../stores/todo.store';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +26,11 @@ import { FooterComponent } from './footer/footer.component';
     HttpModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [{
+      provide: TodoStore,
+      useClass: TodoStore
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

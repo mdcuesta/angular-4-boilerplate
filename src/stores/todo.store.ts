@@ -1,6 +1,11 @@
+import { Injectable } from '@angular/core';
 import { createStore } from 'redux';
 import todoApp from '../reducers/todo.reducer';
+import BaseStore from './base.store';
 
-const store = createStore(todoApp);
-
-export default store;
+@Injectable()
+export default class TodoStore extends BaseStore {
+  constructor() {
+    super(todoApp);
+  }
+}
